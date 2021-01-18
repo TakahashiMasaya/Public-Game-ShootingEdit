@@ -1,0 +1,87 @@
+{
+  "name": "shooting_edit_vue3.0",
+  "version": "1.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@vue/cli-plugin-eslint": "^4.5.7",
+    "@vue/cli-service": "^4.5.7",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-airbnb": "^5.1.0",
+    "eslint": "^7.11.0",
+    "eslint-import-resolver-alias": "^1.1.2",
+    "eslint-plugin-import": "^2.22.1",
+    "firebase": "^7.23.0",
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.0-beta.13",
+    "vuex": "^4.0.0-beta.4"
+  },
+  "devDependencies": {
+    "eslint-plugin-vue": "^7.0.1",
+    "node-sass": "^4.14.1",
+    "pass": "^0.2.0",
+    "sass-loader": "^10.0.3"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/vue3-recommended",
+      "@vue/airbnb",
+      "eslint:recommended"
+    ],
+    "rules": {
+      "no-console": "warn",
+      "class-methods-use-this": 0
+    },
+    "parserOptions": {
+      "ecmaVersion": 2020
+    },
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "extensions": [
+            ".vue",
+            ".js",
+            ".jsx",
+            ".json",
+            ".ts",
+            ".tsx"
+          ]
+        },
+        "alias": {
+          "map": [
+            [
+              "@",
+              "./src/"
+            ]
+          ],
+          "extensions": [
+            ".vue",
+            ".json",
+            ".js",
+            ".jsx",
+            ".ts",
+            ".tsx"
+          ]
+        }
+      }
+    }
+  },
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ]
+}
